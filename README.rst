@@ -6,7 +6,7 @@ Cookiecutter_ template for jbloomlab_ Python packages.
 
 Quickstart
 ----------
-Check if you have a recent version of Cookicutter_ by running::
+Check if you have a recent version of Cookiecutter_ by running::
 
     cookiecutter --version
     

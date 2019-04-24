@@ -2,7 +2,7 @@
   "full_name": "the Jesse Bloom lab",
   "email": "jbloom@fredhutch.org",
   "github_username": "jbloomlab",
-  "project_name (all lowercase, no spaces or hyphens)": "jbloomlab_package_template",
+  "project_name": "jbloomlab_package_template",
   "project_short_description": "jbloomlab Python package template.",
   "pypi_username": "jbloom",
   "version": "0.1.dev0"
