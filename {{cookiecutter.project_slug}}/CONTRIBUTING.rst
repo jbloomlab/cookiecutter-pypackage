@@ -1,0 +1,5 @@
+
+## Requirements file
+https://pip.pypa.io/en/stable/reference/pip_install/#requirements-file-format
+
+## Slack notifications

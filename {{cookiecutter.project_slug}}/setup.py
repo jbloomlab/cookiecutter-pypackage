@@ -1,11 +1,10 @@
-"""Setup script for ``{{ cookiecutter.project_slug }}``.
+"""Setup script for ``{{ cookiecutter.project_slug }}``."""
 
-Written by Jesse Bloom.
-"""
 
 import re
 from setuptools import setup
 import sys
+
 
 if not (sys.version_info[0] == 3 and sys.version_info[1] >= 6):
     raise RuntimeError(
@@ -45,7 +44,8 @@ setup(
     description='{{ cookiecutter.project_short_description }}',
     long_description=readme,
     license='GPLv3',
-    install_requires=[],
+    install_requires=[
+                      ],
     platforms='Linux and Mac OS X.',
     packages=['{{ cookiecutter.project_slug }}'],
     package_dir={'{{ cookiecutter.project_slug }}': '{{ cookiecutter.project_slug }}'},
