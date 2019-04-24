@@ -10,7 +10,7 @@
 
 {{ cookiecutter.project_short_description }}
 
-``{{ cookiecutter.project_slug }}`` is a Python package written by the {{ cookiecutter.full_name }}.
+``{{ cookiecutter.project_slug }}`` is a Python package written by {{ cookiecutter.full_name }}.
 
 The source code is `on GitHub <https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}>`_.
 
