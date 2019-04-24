@@ -23,11 +23,11 @@ Pushing docs to GitHub pages
 ------------------------------
 The docs are hosted on `GitHub pages`_ at https://{{ cookiecutter.github_username }}.github.io/{{ cookiecutter.project_slug }}
 
-After you have built the documentation as described above, here is how you push it to `GitHub page`_:
+After you have built the documentation as described above, here is how you push it to `GitHub pages`_:
 
 Building the documentation for the first time
 +++++++++++++++++++++++++++++++++++++++++++++++
-If you are building the docs for the **very first time**, then there will **not** be any branch called ``gh-pages`` on the project GitHub page.
+If you are building the docs for the **very first time**, then there will **not** be any branch called ``gh-pages`` on the project's GitHub repo.
 In that case, you need to create that branch in the ``_build/html/`` subdirectory.
 
 First, clone the repo into ``_build/html/``::
