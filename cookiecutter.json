@@ -1,8 +1,9 @@
 {
-  "full_name": "the Jesse Bloom lab",
+  "full_name": "`the Bloom lab <https://research.fhcrc.org/bloom/en.html>`_",
   "email": "jbloom@fredhutch.org",
   "github_username": "jbloomlab",
-  "project_name": "jbloomlab_package_template",
+  "project_name": "jbloomlab package template",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
   "project_short_description": "jbloomlab Python package template.",
   "pypi_username": "jbloom",
   "version": "0.1.dev0"

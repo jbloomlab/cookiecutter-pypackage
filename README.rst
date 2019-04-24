@@ -20,10 +20,9 @@ Then generate a Python package project::
 
 Then:
 
-* Create a repo and put it there.
+* Create your repo.
 * Add the repo to your Travis-CI_ account.
 * Register_ your project with PyPI.
-* Activate your project on `pyup.io`_.
 
 
 For more details, see the `cookiecutter-pypackage tutorial`_.

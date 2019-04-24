@@ -1,4 +1,4 @@
-"""Setup script for ``{{ cookiecutter.project_name }}``.
+"""Setup script for ``{{ cookiecutter.project_slug }}``.
 
 Written by Jesse Bloom.
 """
@@ -9,7 +9,7 @@ import sys
 
 if not (sys.version_info[0] == 3 and sys.version_info[1] >= 6):
     raise RuntimeError(
-                '{{ cookiecutter.project_name }} requires Python 3.6 or higher.\n'
+                '{{ cookiecutter.project_slug }} requires Python 3.6 or higher.\n'
                 'You are using Python {0}.{1}'.format(
                 sys.version_info[0], sys.version_info[1])
                 )
@@ -17,7 +17,7 @@ if not (sys.version_info[0] == 3 and sys.version_info[1] >= 6):
 # get metadata from package `__init__.py` file as here:
 # https://packaging.python.org/guides/single-sourcing-package-version/
 metadata = {}
-init_file = '{{ cookiecutter.project_name }}/__init__.py'
+init_file = '{{ cookiecutter.project_slug }}/__init__.py'
 with open(init_file) as f:
     init_text = f.read()
 for dataname in ['version', 'author', 'email', 'url']:
@@ -35,18 +35,18 @@ with open('README.rst') as f:
 
 # main setup command
 setup(
-    name='{{ cookiecutter.project_name }}',
+    name='{{ cookiecutter.project_slug }}',
     version=metadata['version'],
     author=metadata['author'],
     author_email=metadata['email'],
     url=metadata['url'],
-    download_url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }}/tarball/' +
+    download_url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/tarball/' +
                  metadata['version'],  # tagged version on GitHub
     description='{{ cookiecutter.short_description }}',
     long_description=readme,
     license='GPLv3',
     install_requires=[],
     platforms='Linux and Mac OS X.',
-    packages=['{{ cookiecutter.project_name }}'],
-    package_dir={'{{ cookiecutter.project_name }}': '{{ cookiecutter.project_name }}'},
+    packages=['{{ cookiecutter.project_slug }}'],
+    package_dir={'{{ cookiecutter.project_slug }}': '{{ cookiecutter.project_slug }}'},
 )
