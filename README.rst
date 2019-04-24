@@ -6,11 +6,15 @@ Cookiecutter_ template for jbloomlab_ Python packages.
 
 Quickstart
 ----------
-Install the latest Cookiecutter if you haven't installed it yet:
+Check if you have a recent version of Cookicutter_ by running::
+
+    cookiecutter --version
+    
+If you don't have a recent version installed (you need at least version 1.4), the insall one with::
 
     pip install -U cookiecutter
 
-Generate a Python package project::
+Then generate a Python package project::
 
     cookiecutter https://github.com/jbloomlab/cookiecutter-pypackage.git
 

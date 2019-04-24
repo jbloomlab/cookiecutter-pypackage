@@ -6,7 +6,5 @@
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
   "project_short_description": "jbloomlab Python package template.",
   "pypi_username": "jbloom",
-  "version": "0.1.dev0",
-  "use_pytest": "n",
-  "add_pyup_badge": "n",
+  "version": "0.1.dev0"
 }
