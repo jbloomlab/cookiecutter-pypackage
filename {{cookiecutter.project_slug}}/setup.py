@@ -2,16 +2,15 @@
 
 
 import re
-from setuptools import setup
 import sys
+
+from setuptools import setup
 
 
 if not (sys.version_info[0] == 3 and sys.version_info[1] >= 6):
     raise RuntimeError(
-                '{{ cookiecutter.project_slug }} requires Python 3.6 or higher.\n'
-                'You are using Python {0}.{1}'.format(
-                sys.version_info[0], sys.version_info[1])
-                )
+                '{{ cookiecutter.project_slug }} requires Python >=3.6.\n'
+                f"You are using {sys.version_info[0]}.{sys.version_info[1]}.")
 
 # get metadata from package `__init__.py` file as here:
 # https://packaging.python.org/guides/single-sourcing-package-version/
