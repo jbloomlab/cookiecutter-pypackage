@@ -42,7 +42,7 @@ setup(
     url=metadata['url'],
     download_url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/tarball/' +
                  metadata['version'],  # tagged version on GitHub
-    description='{{ cookiecutter.short_description }}',
+    description='{{ cookiecutter.project_short_description }}',
     long_description=readme,
     license='GPLv3',
     install_requires=[],
