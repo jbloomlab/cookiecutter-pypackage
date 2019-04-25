@@ -16,4 +16,4 @@ The source code is `on GitHub <https://github.com/{{ cookiecutter.github_usernam
 
 See the `{{ cookiecutter.project_slug }} documentation <https://{{ cookiecutter.github_username }}.github.io/{{ cookiecutter.project_slug }}>`_ for details on how to install and use ``{{ cookiecutter.project_slug }}``.
 
-To contribute to this package, read the instructions in `CONTRIBUTING.md <CONTRIBUTING.md>`_.
+To contribute to this package, read the instructions in `CONTRIBUTING.rst <CONTRIBUTING.rst>`_.
