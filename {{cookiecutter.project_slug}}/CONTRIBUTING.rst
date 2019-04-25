@@ -66,7 +66,7 @@ If these are not installed, install them with::
 
     pip install -r test_requirements.txt
 
-Then use flake8__ to `lint the code <https://en.wikipedia.org/wiki/Lint_%28software%29>`_ by running::
+Then use flake8_ to `lint the code <https://en.wikipedia.org/wiki/Lint_%28software%29>`_ by running::
 
     flake8
 
