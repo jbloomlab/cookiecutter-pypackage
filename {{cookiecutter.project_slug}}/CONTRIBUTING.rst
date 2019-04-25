@@ -119,6 +119,6 @@ Note that this requires you to have registered the package on PyPI_ if this is t
 .. _sphinx: https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html
 .. _tests: tests
 .. _docs: docs
-.. _`__init__.py`: {{ cookiecutter.package_slug }}/__init__.py
+.. _`__init__.py`: {{ cookiecutter.project_slug }}/__init__.py
 .. _CHANGELOG: CHANGELOG.rst
 .. _twine: https://github.com/pypa/twine
