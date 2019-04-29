@@ -17,5 +17,6 @@ Contents
 
    installation
    {{ cookiecutter.project_slug }}
+   examples
    package_index
    acknowledgments

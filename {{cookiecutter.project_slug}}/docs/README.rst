@@ -19,6 +19,19 @@ Then simply type::
 and the HTML documentation will be built in ``_build/html/``.
 You can open the HTML files in that directory to see how the docs look.
 
+
+Jupyter notebooks as examples
+------------------------------
+The documentation is set up to include `Jupyter notebooks`_ via nbsphinx_.
+Assuming you have them in the `../notebooks/ <../notebooks/>`_ subdirectory, you need to use nbsphinx-link_ to include them.
+For instance, if you have a notebook at the path ``../notebooks/example_notebook.ipynb``, then you would first create a file in this docs directory called ``example_notebook.nblink`` with the following contents::
+
+    {
+        "path": "../notebooks/example_notebook.ipynb"
+    }
+
+You would then simply include the notebook by adding ``example_notebook`` to one of your ``*.rst`` files (e.g., `examples.rst <examples.rst>`_) the same way that you would link to another ``*.rst`` file.
+
 Pushing docs to GitHub pages
 ------------------------------
 The docs are hosted on `GitHub pages`_ at https://{{ cookiecutter.github_username }}.github.io/{{ cookiecutter.project_slug }}
@@ -83,3 +96,6 @@ Finally, commit and push this new version of the docs::
 .. _reStructuredText: http://docutils.sourceforge.net/docs/user/rst/quickref.html
 .. _`GitHub pages`: https://help.github.com/en/articles/what-is-github-pages>
 .. _sphinx: http://www.sphinx-doc.org
+.. _nbsphinx: https://nbsphinx.readthedocs.io
+.. _nbsphinx-link: https://github.com/vidartf/nbsphinx-link
+.. _`Jupyter notebooks`: https://jupyter.org/
