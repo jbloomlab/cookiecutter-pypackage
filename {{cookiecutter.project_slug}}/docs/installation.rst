@@ -7,4 +7,4 @@ The easiest way to install ``{{ cookiecutter.project_slug }}`` is from `PyPI <ht
 
     pip install {{ cookiecutter.project_slug }}
 
-The source code for ``{{ cookiecutter.project_slug }}`` is available on GitHub at https://github.com/{{ cookiecutter.full_name }}/{{ cookiecutter.project_slug }}.
+The source code for ``{{ cookiecutter.project_slug }}`` is available on GitHub at https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}.
