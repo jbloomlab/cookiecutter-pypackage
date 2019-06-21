@@ -8,6 +8,9 @@
 .. image:: https://img.shields.io/travis/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}.svg
         :target: https://travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}
 
+.. image:: https://mybinder.org/badge_logo.svg
+        :target: https://mybinder.org/v2/gh/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/master?filepath=notebooks
+
 {{ cookiecutter.project_short_description }}
 
 ``{{ cookiecutter.project_slug }}`` is a Python package written by {{ cookiecutter.full_name }}.

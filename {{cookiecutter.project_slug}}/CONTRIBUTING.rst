@@ -36,7 +36,6 @@ For more elaborate functionality, put unit tests in tests_.
 Note also that the `Jupyter notebooks`_ in notebooks_ are tested via nbval_.
 If you are getting errors on these notebook tests due to testing cells that output objects that can't be properly tested (such as widgets), see the *nbval-ignore-output* tag option discussed in the nbval_ docs.
 
-
 Versions and CHANGELOG
 ++++++++++++++++++++++
 The version is `single sourced <https://packaging.python.org/guides/single-sourcing-package-version/>`_ in `__init__.py`_.
@@ -49,6 +48,16 @@ Adding dependencies
 +++++++++++++++++++++
 When you add code that uses a new package that is not in the standard python library, you should add it to the dependencies specified under the `install_requires` option in `setup.py <setup.py>`_.
 `See here <https://packaging.python.org/discussions/install-requires-vs-requirements/>`_ for information on how to do this, and how to specify minimal required versions.
+As described in the above link, you should **not** pin exact versions in `install_requires` in `setup.py <setup.py>`_ unless absolutely necessary.
+
+Notebooks on mybinder
+-----------------------
+The `Jupyter notebooks`_ in notebooks_ can be run interactively on mybinder_ by going to the following link:
+https://mybinder.org/v2/gh/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/master?filepath=notebooks
+
+In order for this to work, you need to keep the `environment.yml <environment.yml>`_ configuration file up to date with the dependencies for running these notebooks as `described here <https://mybinder.readthedocs.io/en/latest/config_files.html>`_.
+Note that unlike for the `install_requires` in `setup.py <setup.py>`_, you may want to pin exact versions here to get reproducible installations.
+Look into the `pip freeze <https://pip.pypa.io/en/stable/reference/pip_freeze/>`_ and `conda env export <https://packaging.python.org/discussions/install-requires-vs-requirements>`_ commands on how to automatically create such a configuration file.
 
 Testing
 ---------
@@ -131,3 +140,4 @@ Note that this requires you to have registered the package on PyPI_ if this is t
 .. _twine: https://github.com/pypa/twine
 .. _`numpy style documentation`: https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html
 .. _nbval: https://nbval.readthedocs.io
+.. _mybinder: https://mybinder.readthedocs.io
